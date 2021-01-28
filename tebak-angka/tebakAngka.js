@@ -32,46 +32,43 @@ console.log(comp);
 var kesempatan = 3;
 var lagi = true;
 
-while(lagi){
-
-    while(kesempatan){
-        
-        // menangkap pilihan player
-        var user = parseInt(prompt('Masukkan angka tebakan ...'));
+while(kesempatan){
+    
+    // menangkap pilihan player
+    var user = parseInt(prompt('Masukkan angka tebakan ...'));
 
 
-        var hasil = '';
+    var hasil = '';
 
-        // menentukan rules
-        if(user == comp){
-            alert('Tebakan BENAR! \nAngka yang dicari adalah: ' + comp)
-            kesempatan = 0;
-        }else if(user < comp){
-            kesempatan = kesempatan - 1;
-            alert('Terlalu RENDAH! \nKamu masih punya: ' + kesempatan + ' kesempatan');
-            if(kesempatan == 0){
-                alert('Kesempatan kamu habis!');
-            }
-            if(kesempatan == 0){
-                alert('Anda gagal! \nAngka yang dicari adalah: ' + comp);
-            }
-        }else if(user > comp){
-            kesempatan = kesempatan - 1;
-            alert('Terlalu TINGGI! \nKamu masih punya: ' + kesempatan + ' kesempatan');
-            if(kesempatan == 0){
-                alert('Kesempatan kamu habis!');
-            }
-            if(kesempatan == 0){
-                alert('Anda gagal! \nAngka yang dicari adalah: ' + comp);
-            }
-        } else {
-            alert("Masukan tidak boleh string/kosong.");
+    // menentukan rules
+    if(user == comp){
+        alert('Tebakan BENAR! \nAngka yang dicari adalah: ' + comp)
+        kesempatan = 0;
+    }else if(user < comp){
+        kesempatan = kesempatan - 1;
+        alert('Terlalu RENDAH! \nKamu masih punya: ' + kesempatan + ' kesempatan');
+        if(kesempatan == 0){
+            alert('Kesempatan kamu habis!');
         }
-        
+        if(kesempatan == 0){
+            alert('Anda gagal! \nAngka yang dicari adalah: ' + comp);
+        }
+    }else if(user > comp){
+        kesempatan = kesempatan - 1;
+        alert('Terlalu TINGGI! \nKamu masih punya: ' + kesempatan + ' kesempatan');
+        if(kesempatan == 0){
+            alert('Kesempatan kamu habis!');
+        }
+        if(kesempatan == 0){
+            alert('Anda gagal! \nAngka yang dicari adalah: ' + comp);
+        }
+    } else {
+        alert("Masukan tidak boleh string/kosong.");
     }
     
-    lagi = confirm('Ingin Main Lagi ?');
-    
 }
+
+lagi = confirm('Ingin Main Lagi ?');
+    
 
 alert("Terima kasih telah bermain!");
