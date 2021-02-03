@@ -1,0 +1,142 @@
+::selection{
+    background-color: yellow;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #1D1D1D;
+    color: #fff; /* white */
+}
+
+.container {
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #313131;
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+
+
+header h1:last-child {
+    font-weight: 200;
+}
+
+.video {
+    width: 80%;
+    margin: 50px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #272727;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 40px 1.5fr;
+    align-content: center;
+    /* grid-auto-flow: column; */
+    gap: 20px;
+
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: start;
+    /* grid-row: 1 / -3; */
+}
+
+.video-box {
+    height: 23vh;
+    border-radius: 10px;
+    background-color: #242424;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.data-video > .video-box.satu {
+    background-image: url("img/html.png");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+}
+
+.data-video > .video-box.dua{
+    background-image: url("img/css.png");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+}
+
+.data-video > .video-box.tiga{
+    background-image: url("./img/js.png");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+}
+
+.data-video > .video-box.empat{
+    background-image: url("./img/js.png");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+}
+
+.data-video > .video-box.lima{
+    background-image: url("./img/ES6.png");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+}
+
+.data-video > .video-box.enam{
+    background-image: url("./img/jquery.png");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+}
+
+.data-video > .video-box.tujuh{
+    background-image: url("./img/npm.png");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    
+}
+
+.data-video > .desc > h2 {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.data-video > .desc > p {
+    font-weight: 100;
+    color: rgb(122, 122, 122);
+}
+
+.desc {
+    padding: 0 5px;
+    box-sizing: border-box;
+}
