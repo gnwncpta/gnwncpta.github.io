@@ -95,3 +95,9 @@ li img:active{
     }   
 
 }
+
+@media (max-width: 400px){
+    li img {
+        width: 80px;
+    }
+}
