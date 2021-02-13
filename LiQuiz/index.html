@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiQuiz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/LiQuiz.png">
 </head>
 <body>
+
+    <div class="welcome">
+        <h2>Hello LiQuizer.</h2>
+        <p>Selamat datang di aplikasi LiQuiz<br>semoga kamu enjoy menggunakan aplikasi LiQuiz</p>
+        <a href="" class="close">Ok, Sans</a>
+    </div>
+
+    <div class="dark-bg" id="dark-bg"></div>
 
     <main class="container">
         <header>
             <h1>LiQuiz.</h1>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="dot">Home</a></li>
                 <li><a href="#">Targeted</a></li>
                 <li><a href="#">Trial & Error</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#sign-up" class="sign-up">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign-up.html" class="sign-up">Sign Up</a></li>
             </ul>
         </header>
 
@@ -162,6 +172,7 @@
 
     </main>
 
+    <script src="header.js"></script>
     <script src="script.js"></script>
     <script src="warn.js"></script>
 </body>

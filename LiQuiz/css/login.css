@@ -1,0 +1,345 @@
+:root {
+    --bg-white: #FDFDFD;
+    --text-color: #333333;
+    --sign-up: #E6E60F;
+}
+
+body {
+    background-color: var(--bg-white);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+
+/* IMAGE LEFT */
+.image-left {
+    max-width: 25%;
+    height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: var(--sign-up);
+}
+
+.image-left > h2 {
+    font-size: 2.4rem;
+}
+
+.image-left img {
+    width: 130%;
+    position: relative;
+    top: 20px;
+}
+
+.image-left p {
+    position: absolute;
+    bottom: 17px;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.image-left .bg-p {
+    display: block;
+    width: 25%;
+    height: 15%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-color: black;
+    opacity: .2;
+}
+
+/* LOGIN RIGHT */
+.login-right{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 90px;
+}
+
+.login {
+    width: 350px;
+    margin-right: 35px;
+}
+
+.login h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.login form {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label[for='username'] {
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+form label[for='username']:focus {
+    background-color: black;
+    color: white;
+}
+
+form input[type='text'] {
+    border: none;
+    height: 50px;
+    padding-left: 20px; 
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #4a4a4a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+}
+
+form label[for='password'] {
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+form input[type='password'] {
+    border: none;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #373737;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    margin-bottom: 20px;
+}
+
+form a {
+    text-decoration: none;
+    color: #333333;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sign-up);
+    margin-bottom: 20px;
+}
+
+.login p {
+    color: #333333;
+    font-weight: 200;
+    font-size: .9em;
+}
+
+.login p a {
+    color: black;
+    padding: 3px 12px;
+}
+
+.login p a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+/* LINE */
+
+.line {
+    width: 1px;
+    height: 130px;
+    background-color: black;
+    opacity: .1;
+    margin-right: 35px;
+}
+
+/* Login Using */
+
+.oauth {
+    text-align: center;
+}
+
+.oauth p:first-child {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.oauth .or{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.oauth .google {
+    text-decoration: none;
+    color: white;
+    background-color: #3689EA;
+    padding: 10px 60px;
+    border-radius: 50px;
+}
+
+.oauth .facebook {
+    text-decoration: none;
+    color: white;
+    background-color: #2463AD;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 540px) and (max-width: 1024px) {
+  
+    .image-left {
+        display: none;
+    }
+
+    
+    
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+/* Surface Duo */
+@media (max-width: 540px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .image-left{
+        display: none;
+    }
+
+    .line {
+        margin-top: 30px;
+        height: 1px;
+        width: 100px;
+        margin-bottom: 30px;
+    }
+
+    .login-right{
+        flex-direction: column;
+        padding: 45px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        overflow-y: scroll;
+    }
+
+    .image-left {
+        display: none;
+    }
+
+    .line {
+        margin-top: 30px;
+        height: 1px;
+        width: 100px;
+        margin-bottom: 30px;
+    }
+
+    .login-right{
+        flex-direction: column;
+        padding: 45px;
+        justify-content: center;
+    }
+
+    .login {
+        width: 260px;
+    }
+    
+    .login h2 {
+        font-size: 2em;
+    }
+
+    .login form label[for='username'], .login form label[for='password']{
+        font-size: 1em;
+    }
+
+    .login form input[type='text'], .login form input[type='password'], .login form a{
+        height: 40px;
+    }
+
+    .login form a {
+        font-size: 1em;
+    }
+
+    .login p {
+        font-size: .8em;
+    }
+
+    .oauth {
+        margin-bottom: 20px;
+    }
+    .oauth .or {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media (max-width: 280px){
+
+    body {
+        overflow: auto;
+    }
+
+    .login-right{
+        flex-direction: column;
+        padding: 35px;
+        justify-content: center;
+    }
+
+    .login {
+        width: 230px;
+    }
+
+    .login h2 {
+        font-size: 2em;
+    }
+
+    .login form label[for='username'], .login form label[for='password']{
+        font-size: 1em;
+    }
+
+    .login form input[type='text'], .login form input[type='password'], .login form a{
+        height: 40px;
+    }
+
+    .login form a {
+        font-size: 1em;
+    }
+
+    .login p {
+        font-size: .8em;
+    }
+
+}
