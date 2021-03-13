@@ -376,20 +376,20 @@ header ul li a {
 }
 
 /* LEFT SIDE */
-.footer-content .left-footer h2{
+.left-footer h2{
     font-size: 2.8em;
     margin-bottom: 30px;
 }
 
-.footer-content .left-footer ul {
+.left-footer ul {
     list-style: none;
 }
 
-.footer-content .left-footer ul li {
+.left-footer ul li {
     margin: 15px 0;
 }
 
-.footer-content .left-footer ul li a {
+.left-footer ul li a {
     color: #DEDEDE;
     font-weight: 300;
     text-decoration: none;
@@ -615,34 +615,68 @@ header ul li a {
 
     /* FOOTER */
 
+    .footer {
+    }
+
     .footer-content {
+        margin: 40px auto;
         flex-wrap: nowrap;
         justify-content: space-between;
     }
 
-    .right-footer{
+    .left-footer h2{
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .left-footer ul li {
+        margin: 10px 0;
+    }
+
+    .left-footer ul li a{
+        font-size: .9em;
+    }
+
+
+    .right-footer {
         flex-direction: column;
     }
 
-    .right-footer .tech-design, .navigation, .get-started, .socials {
-        align-items: flex-end;
+    .right-footer .tech-design {
+        margin-top:5px;
     }
 
-    .right-footer .tech-design ul li{
+    .right-footer .tech-design,
+    .right-footer .navigation,
+    .right-footer .get-started,
+    .right-footer .socials {
         text-align: right;
     }
 
-    .right-footer .navigation ul li{
-        text-align: right;
+    .right-footer .tech-design h2,
+    .right-footer .navigation h2,
+    .right-footer .get-started h2,
+    .right-footer .socials h2 {
+        font-size: 1.2em;
     }
 
-    .right-footer .get-started ul li{
-        text-align: right;
+    .right-footer .tech-design ul,
+    .right-footer .navigation ul,
+    .right-footer .get-started ul,
+    .right-footer .socials ul {
+        margin-bottom: 15px;
     }
 
+    .right-footer .tech-design ul li,
+    .right-footer .navigation ul li,
+    .right-footer .get-started ul li,
     .right-footer .socials ul li{
-        text-align: right;
+        font-size: .9em;
+        margin: 10px 0;
     }
 
+    .copyright {
+        font-size: .7em;
+    }
 
 }

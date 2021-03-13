@@ -7,7 +7,7 @@ nav.forEach((e) => {
         if(target.classList.contains('none')){
             target.classList.remove('none')
             target.classList.add('dot');
-        }
+        } 
        
         if(target.classList.contains('sign-up')){
             target.classList.remove('dot');
