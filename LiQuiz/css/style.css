@@ -489,6 +489,21 @@ header ul li a {
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
+/* @media (max-width: 500px) {
+    .easy {
+        grid-column: 1/5;
+        background-size: 450px;
+        background-position-y: -13px;
+        background-position-x: 20%;
+    }
+
+    .accurate {
+        grid-column: 1/5;
+        background-size: 400px;
+        background-position-y: -58px;
+        background-position-x: %;
+    }
+} */
 
 @media (min-width: 320px) and (max-width: 500px) {
   
@@ -513,6 +528,15 @@ header ul li a {
         grid-template-rows: 115px 115px 100px 100px;
         gap: 13px;
         margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .top div {
+        padding: 0 25px;
+    }
+
+    .top .liquiz-style {
+        font-size: 2.5em;
     }
 
     .liquiz-style {
@@ -520,11 +544,10 @@ header ul li a {
     }
 
     .liquiz-style {
-        background-image: url('../basic/White-in-Basic9.png');
         background-size: 650px;
         background-repeat: no-repeat;
         background-position-y: -20%;
-        background-position-x: -20px;
+        background-position-x: 23%;
     }
 
     .liquiz-style p {
@@ -533,14 +556,16 @@ header ul li a {
 
     .easy {
         grid-column: 1/5;
-        background-position-y: -45px;
-        background-position-x: 60px;
+        background-size: 450px;
+        background-position-y: -13px;
+        background-position-x: -10%;
     }
 
     .accurate {
         grid-column: 1/5;
-        background-position-y: -85px;
-        background-position-x: 90px;
+        background-size: 400px;
+        background-position-y: -58px;
+        background-position-x: 80px;
     }
 
     /* BOTTOM GRID */

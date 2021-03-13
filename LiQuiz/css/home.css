@@ -348,7 +348,7 @@ header ul li a.profile img {
 }
 
 /* Responsive Mobile */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 500px) {
 
     header h1 {
         font-size: 1.5em;
@@ -361,5 +361,9 @@ header ul li a.profile img {
     .quiz .title {
         font-size: 1em;
         margin-bottom: 20px;
+    }
+
+    .quiz-cards {
+        justify-content: center;
     }
 }
