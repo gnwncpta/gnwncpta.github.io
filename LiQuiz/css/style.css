@@ -521,6 +521,10 @@ header ul li a {
         display: none;
     }
 
+    header h1 {
+        font-size: 1.5em;
+    }
+
     /* TOP GRID */
     .top {
         display: grid;
