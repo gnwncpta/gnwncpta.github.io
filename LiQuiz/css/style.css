@@ -510,16 +510,28 @@ header ul li a {
         grid-column: 1/5;
     }
 
+    .liquiz-style {
+        background-image: url('../basic/White-in-Basic9.png');
+        background-size: 650px;
+        background-repeat: no-repeat;
+        background-position-y: -20%;
+        background-position-x: -20px;
+    }
+
     .liquiz-style p {
         font-size: 1em;
     }
 
     .easy {
         grid-column: 1/5;
+        background-position-y: -45px;
+        background-position-x: 60px;
     }
 
     .accurate {
         grid-column: 1/5;
+        background-position-y: -85px;
+        background-position-x: 90px;
     }
 
     /* BOTTOM GRID */
