@@ -492,6 +492,15 @@ header ul li a {
 
 @media (min-width: 320px) and (max-width: 500px) {
   
+    .welcome {
+        width: 70%;
+        left: 6%;
+    }
+
+    .welcome a.close {
+        width: 75%;
+    }
+
     /* CSS */
     header ul {
         display: none;
