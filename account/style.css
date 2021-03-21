@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 20px;
+}
+
+header {
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.input-form {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* .input-form:hover {
+    background-color: rgb(45, 45, 45);
+} */
+
+i {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+}
+
+header div input {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+    border: solid rgb(45, 45, 45);
+    border-width: 1px;
+    border-radius: 6px;
+    /* border: none; */
+    /* border-width: 0 0 2px 0; */
+    background-color: transparent;
+    color: rgb(205, 205, 205);
+    letter-spacing: .5px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: .1s all;
+}
+
+div input::placeholder {
+    color: rgb(129, 129, 129);
+}
+
+header div input:hover {
+    background-color: rgb(45, 45, 45);
+}
+
+header div input:focus {
+    outline: none;
+    border: 1px solid rgb(137, 165, 193);
+    background-color: rgb(45, 45, 45);
+}
+
+header div input::placeholder:focus{
+    color: rgb(33, 33, 33);
+}
+
+
+.table {
+    margin-top: 60px;
+}
+
+table {
+    width: 100%;
+}
+
+table thead {
+    background-color: rgb(35, 35, 35);
+}
+
+table thead tr th {
+    padding: 10px 0px;
+}
+
+table thead tr th:first-child{
+    border-radius: 8px 0px 0px 0px;
+}
+
+table thead tr th:last-child{
+    border-radius: 0px 8px 0px 0px;
+}
+
+table tbody tr {
+    text-align: center;
+}
+
+table tbody tr:nth-child(even){
+    background-color: rgb(25, 25, 25);
+}
+
+table tbody tr td {
+    padding: 10px 0;
+}
+
+table tbody tr td:first-child {
+    padding: 0 15px;
+}
+
+table tbody tr td:last-child {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+/* ====================================== */
+
+td:last-child {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+/* Jika dihover ke input maka .box akan berubah warna */
+td:last-child:hover input ~ .box {
+    background-color: rgb(191, 191, 191);
+}
+
+/* Jika input di checked maka box berubah warna */
+td:last-child input:checked ~ .box {
+    background-color: #218af3;
+}
+
+/* Jika input di checked maka .line akan berubah */
+td:last-child input:checked ~ .line {
+    transition: .3s ease-in;
+    width: 80%;
+}
+
+.dark-text {
+    color: #333;
+}
+
+/* Buat line atau garis */
+.line {
+    width: 0%;
+    height: 2px;
+    background-color: #545454;
+    position: absolute;
+    left: 50px;
+    transition: .3s ease-in;
+}
+
+/* Buat kotak */
+.box {
+    position: absolute;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.box::after {
+    content: '';
+    position: relative;
+    display: none;
+    left: 9px;
+    /* bottom: 1px; */
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(224, 224, 224);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    z-index: 10;
+}
+
+td:last-child input:checked ~ .box::after{
+    display: block;
+}
+
+input[type="checkbox"] {
+    width: 100%;
+    height: 20px;
+    transition: .8s ease-in;
+    display: flex;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    /* display: none; */
+}
+
+/* input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    left: 32px;
+    width: 0%;
+    height: 2px;
+    opacity: .8;
+    transition: .3s ease-in;
+    background-color: rgb(255, 0, 0);
+    align-self: center;
+}
+
+input[type="checkbox"]:checked::after {
+    opacity: .8;
+    content: '';
+    
+    position: absolute;
+    width: 86.8%;
+    transition: .3s ease-in-out;
+} */
+
+/* Task Berikutnya adalah membuat teksnya menjadi
+   pudar ketika tombol checklist di click */
+   
+/* tr > td, input[type="checkbox"]:checked::after {
+    color: rgb(35, 35, 35);
+} */
+
+
+/* Responseive Breakpoint */
+@media screen and (max-width: 640px){
+    td:last-child input:checked ~ .line {
+        width: 70%;
+    }
+}
