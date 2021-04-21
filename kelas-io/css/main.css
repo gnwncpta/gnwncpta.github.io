@@ -702,6 +702,10 @@ footer .footer-biru {
     display: none;
 }
 
+.hide-overlay {
+    display: none;
+}
+
 .soft-black {
     width: 100vw;
     height: 100vh;
