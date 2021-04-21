@@ -868,7 +868,6 @@ footer .footer-biru {
         padding: 0px 0px;
         box-sizing: border-box;
         order: 1;
-        border: 1px solid red;
     }
 
     .what .apa-itu h2 {
@@ -920,7 +919,6 @@ footer .footer-biru {
         position: relative;
         flex-direction: column;
         margin-top: 60px;
-        border: 1px solid red;
     }
 
     .school .sekolah-kuliah {
@@ -968,7 +966,6 @@ footer .footer-biru {
         flex-direction: column;
         margin-top: 136px;
         margin-bottom: 191px;
-        border: 1px solid red;
         position: relative;
     }
 
@@ -981,7 +978,6 @@ footer .footer-biru {
     .belajar .desc-belajar h2 {
         font-size: 24px;
         width: 70%;
-        border: 1px solid red;
         margin-bottom: 314px;
         line-height: 45px;
     }
