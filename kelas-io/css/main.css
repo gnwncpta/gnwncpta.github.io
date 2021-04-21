@@ -698,6 +698,19 @@ footer .footer-biru {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 5.58%, rgba(58, 131, 240, 0.8) 273.79%);
 }
 
+.hamburger-overlay {
+    display: none;
+}
+
+.soft-black {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: .7;
+    position: absolute;
+    z-index: 6;
+}
+
 /* RESPONSIVE FOR MOBILE - M : 375px */
 
 /* 
@@ -705,7 +718,7 @@ footer .footer-biru {
 ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 500px) {
   
     /* Header Section */
 
@@ -738,6 +751,89 @@ footer .footer-biru {
     /* Section First */
     .first {
         /* border: 1px solid red; */
+    }
+
+    @keyframes slidedown {
+        0% { top: -800px; }
+        100% { top: 0px; }
+    }
+
+    @keyframes slideup {
+        0% {
+            top: 0px;
+        }
+
+        100% {
+            top: -800px;
+        }
+    }
+
+    .hide-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 22px;
+        padding-bottom: 38px;
+        width: 100%;
+        background-color: rgba(25, 73, 144, 1);
+        position: absolute;
+        top: -800px;
+        left: 0;
+        z-index: 9;
+        animation: slideup .8s ease-out;
+    }
+
+    .hide-overlay a:first-child {
+        position: relative;
+        left: 140px;
+    }
+
+    .hide-overlay a {
+        margin: 20px 0px;
+        text-decoration: none;
+        color: white;
+        font-weight: 100;
+    }
+
+    .hide-overlay a:last-child {
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 12px 26px;
+        box-sizing: border-box;
+    }
+
+    .hamburger-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 22px;
+        padding-bottom: 38px;
+        width: 100%;
+        background-color: rgba(25, 73, 144, 1);
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 9;
+        animation: slidedown .8s ease-out;
+    }
+
+    .hamburger-overlay a:first-child {
+        position: relative;
+        left: 140px;
+    }
+
+    .hamburger-overlay a {
+        margin: 20px 0px;
+        text-decoration: none;
+        color: white;
+        font-weight: 100;
+    }
+
+    .hamburger-overlay a:last-child {
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 12px 26px;
+        box-sizing: border-box;
     }
 
     /* Header Content Section */
