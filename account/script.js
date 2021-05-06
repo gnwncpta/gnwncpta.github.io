@@ -1,6 +1,15 @@
 "use strict"
 
 // Data NordVPN Account
+
+// Bamer 5K
+// Baputih 5K
+// Ladaku 1pcs
+// Daun Bawang sama Seledri 3K
+// Bihun
+// Cabe Rawit 10K
+// Bawang Goreng ?
+
 const data = [
     {
         id: 1,
