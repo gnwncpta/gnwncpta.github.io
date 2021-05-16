@@ -126,7 +126,7 @@ main .lampu .green-light {
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
 }
 
-@media (min-width: 375px) and (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 500px) {
   
     main .desc p {
         font-size: .8em;
