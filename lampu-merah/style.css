@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+main {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+main .desc h1 {
+    margin-bottom: 10px;
+}
+
+main .desc p {
+    font-weight: 300;
+}
+
+main img {
+    margin-bottom: 140px;
+}
+
+main .buttons {
+    width: fit-content;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+main .buttons button {
+    cursor: pointer;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+
+main .buttons .red {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: red;
+}
+
+main .buttons .yellow {
+    padding: 10px 20px;
+    border: none;
+    color: black;
+    background-color: yellow;
+}
+
+main .buttons .green {
+    padding: 10px 20px;
+    border: none;
+    color: black;
+    background-color: rgb(19, 255, 35);
+}
+
+.red-light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 302px;
+
+    box-shadow: 0px -1px 108px 10px rgba(255,0,0,0.75);
+}
+
+.yellow-light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: 407px;
+
+    box-shadow: 0px -1px 108px 10px rgba(255,255,0,0.75);
+}
+
+.green-light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(19, 255, 35);
+    position: absolute;
+    top: 510px;
+
+    box-shadow: 0px -1px 108px 10px rgba(19, 255, 35,0.75);
+}
+
+.hidden {
+    display: none;
+}
+
+.redup {
+    opacity: .3;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+  
+    main .desc p {
+        font-size: .8em;
+    }
+
+    .red-light {
+        top: 210px;
+    }
+
+    .yellow-light {
+        top: 315px;
+    }
+
+    .green-light {
+        top: 420px;
+    }
+
+    main .buttons {
+        /* flex-direction: column; */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    main .buttons button {
+        width: 100%;
+        margin: 10px 10px;
+        border-radius: 7px;
+    }
+
+    main .desc h1 {
+        margin-top: 50px;
+    }
+    
+}
