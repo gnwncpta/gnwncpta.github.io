@@ -1,8 +1,6 @@
 /* Font Weight Needed */
 /* 300,  */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +10,70 @@
 body {
     background-color: rgb(20, 20, 20);
     color: white;
+}
+
+@keyframes fade-up {
+    0% {
+        top: 40px;
+        opacity: 1;
+    }
+    100% {
+        top: -100px;
+        opacity: 0;
+    }
+}
+
+.fade-up {
+    position: absolute;
+    top: -100px;
+    left: 44.5%;
+    animation: animate-up .5s;
+}
+
+.fade-down {
+    position: absolute;
+    top: 40px;
+    left: 44.5%;
+    animation: animate-down .5s;
+}
+
+@keyframes animate-up {
+    0% {
+        top: 40px;
+    }
+    100% {
+        top: -100px;
+    }
+}
+
+@keyframes animate-down {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 40px;
+    }
+}
+
+
+.auto-alert-on {
+
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgba(19, 224, 4, 0.826);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(22, 255, 5);
+    
+}
+
+.auto-alert-off {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgba(224, 4, 4, 0.812);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(255, 5, 5);
 }
 
 main {
@@ -52,6 +114,7 @@ main .buttons {
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 main .buttons button {
@@ -79,6 +142,20 @@ main .buttons .green {
     border: none;
     color: black;
     background-color: rgb(19, 255, 35);
+}
+
+.buttons .auto {
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(40, 40, 40);
+    transition: .2s all;
+}
+
+.buttons .auto:hover {
+    background-color: rgb(40, 40, 40);
 }
 
 main .lampu .red-light {
@@ -119,6 +196,14 @@ main .lampu .green-light {
 
 .hidden {
     display: none;
+}
+
+main .buttons .active {
+    background-color: rgb(40, 40, 40);
+}
+
+.hidup {
+    opacity: 1;
 }
 
 .redup {

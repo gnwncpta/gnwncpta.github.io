@@ -1,0 +1,17 @@
+{
+  "name": "lampu-merah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^5.2.5",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  }
+}

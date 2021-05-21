@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traffic Light</title>
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="auto-alert-on hidden">
+        <p>Auto On</p>
+    </div>
+
+    <div class="auto-alert-off hidden">
+        <p>Auto Off</p>
+    </div>
+
     <main>
         <div class="desc">
             <h1>Traffic Light</h1>
@@ -23,11 +30,14 @@
         </div>
 
         <div class="buttons">
-            <button class="red">Red</button>
-            <button class="yellow">Yellow</button>
-            <button class="green">Green</button>
+            <div class="colors">
+                <button class="red">Red</button>
+                <button class="yellow">Yellow</button>
+                <button class="green">Green</button>
+            </div>
+            <button class="auto">Auto On</button>
         </div>
     </main>
-    <script src="./script.js"></script>
+    <script src="../dist/main.js"></script>
 </body>
 </html>
