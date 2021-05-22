@@ -1,10 +1,8 @@
+import AutoOn from './AutoOn';
+import { redLight, yellowLight, greenLight } from './Lights';
+
 // Buttons Selection
 const buttons = document.querySelectorAll('button');
-
-// Lights Selection
-const redLight = document.querySelector('.red-light');
-const yellowLight = document.querySelector('.yellow-light');
-const greenLight = document.querySelector('.green-light');
 
 // Alert Selection
 const autoAlertOn = document.querySelector('.auto-alert-on');
@@ -87,17 +85,16 @@ function Execute(){
 
 
                 if(value === "Auto On"){
-                    console.log('Auto On Running.');
+                    console.warn('Auto: On');
 
                     raw.innerHTML = "Auto Off";
                     raw.classList.toggle('active');
-                    // console.log(raw)
+
                     autoAlertOn.classList.remove('hidden');
                     autoAlertOn.classList.remove('fade-up');
                     autoAlertOn.classList.add('fade-down');
                     
                     setTimeout(() => {
-                        // autoAlertOn.classList.add('hidden');
                         autoAlertOn.classList.remove('fade-down');
                         autoAlertOn.classList.add('fade-up');
                     }, 1500);
@@ -108,21 +105,16 @@ function Execute(){
                         hidup.length = 0;
                     }
 
-                    // Timing function to get movement on Traffic Light
-                    let timingLights = {
-                        timingOn: setInterval(() => {
-                            console.log('RUNNING MAN')
-                        }, 2000)
-                    }
-
+                    AutoOn(2000, "on");
 
                 } else if(value === "Auto Off"){
-                    console.log('Auto Off Running.');
-                    clearInterval(timingLights.timingOn);
+                    AutoOn(2000, "off");
+
+                    console.warn('Auto: Off');
 
                     raw.innerHTML = "Auto On";
                     raw.classList.toggle('active');
-                    // console.log(raw)
+
                     autoAlertOff.classList.remove('hidden');
                     autoAlertOff.classList.remove('fade-up');
                     autoAlertOff.classList.add('fade-down');
